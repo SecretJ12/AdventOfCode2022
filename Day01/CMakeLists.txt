@@ -1,0 +1,7 @@
+
+
+add_executable(day01_1 part1.cpp)
+add_executable(day01_2 part2.cpp)
+
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input.txt
+        ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
