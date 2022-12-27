@@ -3,6 +3,15 @@
 #include <string>
 #include <vector>
 
+/*
+ * Solution assumes that the top part of the current cave is exactly the same after every iteration through
+ * the Jet pattern. This is true for my input, cannot verify it for every
+ *
+ * Jet pattern in simulated once to get into the repeating state. Afterward it's simulated again to get the
+ * height and figure number difference. From here we can calculate how many of these circles can be skipped
+ * and how many simulation steps are left, which are executed in the last simulation.
+ */
+
 using namespace std;
 
 long long TOTAL = 1000000000000;
